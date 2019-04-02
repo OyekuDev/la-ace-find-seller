@@ -21,38 +21,38 @@ ORGANIZATION="find-seller"
 
 # This is the Storage bucket used for public assets. 
 # The entire bucket is public by default
-PUBLIC_ASSETS="fs-dev-public-bucket"
+PUBLIC_ASSETS="fs-dev-231803-public-bucket"
 
 # This is the Storage bucket used for private assets. 
 # The entire bucket is private by default
-PRIVATE_ASSETS="fs-dev -private-bucket"
+PRIVATE_ASSETS="fs-dev-231803-private-bucket"
 
 # The name of the Pubsub topic to create / use
-PUB_SUB_TOPIC="fs-dev-items"
+PUB_SUB_TOPIC="fs-dev-231803-items"
 
 # The name of the custom network for the product and ads services
-SERVICES_NETWORK="fs-dev-app-network"
+SERVICES_NETWORK="fs-dev-231803-app-network"
 
 # The name of the product service subnet
-PRODUCT_SUBNET="fs-dev-prod-app-network-subnet"
+PRODUCT_SUBNET="fs-dev-231803-prod-app-network-subnet"
 
 # The name of the product service subnet
-ADS_SUBNET="fs-dev-ad-app-network-subnet"
+ADS_SUBNET="fs-dev-231803-ad-app-network-subnet"
 
 # The name of the Kubernetes cluster used for the products service
-PRODUCT_CLUSTER_NAME="fs-dev-app-clusters"
+PRODUCT_CLUSTER_NAME="fs-dev-231803-app-clusters"
 
 # The name of the spanner instance
-PRODUCT_DB_INSTANCE_NAME="fs-dev-app-spanner-instance"
+PRODUCT_DB_INSTANCE_NAME="fs-dev-231803-app-spanner-instance"
 
 # The name of the spanner db
-PRODUCT_DB_NAME="fs-dev-app-spanner-db"
+PRODUCT_DB_NAME="fs-dev-231803-app-spanner-db"
 
 # The service account to use to launch the compute engine instances.
 COMPUTE_ENGINE_SERVICE_ACCOUNT=$(gcloud iam service-accounts list --filter='displayName:"Compute Engine default service account"' --format='value(email)')
 
 # The cloud function name
-FUNCTION_NAME="fs-dev-upload"
+FUNCTION_NAME="fs-dev-231803-upload"
 
 # Bigtable settings...
 # The name of our Bigtable instance. An instance is basically a container for our cluster.
